@@ -1,0 +1,11 @@
+# 第一个默认的SSH Key
+Host github.com
+    HostName github.com
+    User Gaotianhe
+    IdentityFile ~/.ssh/id_rsa
+	
+# 第二个SSH Key
+Host github.com-rjbq
+    HostName github.com
+    User rjbq
+    IdentityFile ~/.ssh/id_rsa_rjbq

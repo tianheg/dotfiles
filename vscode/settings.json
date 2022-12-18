@@ -1,0 +1,154 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "extensions.ignoreRecommendations": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.largeFileOptimizations": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "python.analysis.logLevel": "Information",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "files.autoSave": "afterDelay",
+    "workbench.statusBar.visible": true,
+    "editor.renderControlCharacters": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "git.enableSmartCommit": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.preserveFocus": false,
+    "sync.gist": "https://gist.github.com/Gaotianhe",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.quietSync": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "cSpell.userWords": [
+        "Gaotianhe",
+        "Hexo",
+        "delim",
+        "disqus",
+        "hljs",
+        "permalinks",
+        "shortname",
+        "titlecase",
+        "uncategorized"
+    ],
+    "[ruby]": {},
+    "files.associations": {
+        "*.swig": "bat",
+        "*.py": "python",
+        "*.toml": "toml"
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.wordWrap": "on",
+    "java.home": "C:\\Program Files\\Java\\jdk-13.0.2",
+    "java.help.firstView": "gettingStarted",
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "sync.forceDownload": true,
+    "sync.forceUpload": true,
+    "editor.columnSelection": false,
+    "svg.preview.mode": "img",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.languageServer": "Pylance",
+    "liveServer.settings.donotVerifyTags": true,
+    "code-runner.languageIdToFileExtensionMap": {
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    },
+    "files.eol": "\n",
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "projectManager.git.baseFolders": [
+        "E:\\Github",
+    ],
+    "java.semanticHighlighting.enabled": true,
+    "[java]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "remote.extensionKind": {
+        "softwaredotcom.swdc-vscode": "workspace"
+    },
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.wait": 0,
+    "terminal.integrated.inheritEnv": false,
+    "update.showReleaseNotes": false,
+    "settingsSync.ignoredExtensions": [
+        "ms-vscode-remote.remote-wsl",
+        "joaompinto.vscode-graphviz",
+        "thekalinga.bootstrap4-vscode",
+        "philipbe.theme-gray-matter",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "gitlens.advanced.messages": {
+        "suppressFileNotUnderSourceControlWarning": true
+    },
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#80CBC4",
+        "activityBar.activeBorder": "#80CBC4",
+        "list.activeSelectionForeground": "#80CBC4",
+        "list.inactiveSelectionForeground": "#80CBC4",
+        "list.highlightForeground": "#80CBC4",
+        "scrollbarSlider.activeBackground": "#80CBC450",
+        "editorSuggestWidget.highlightForeground": "#80CBC4",
+        "textLink.foreground": "#80CBC4",
+        "progressBar.background": "#80CBC4",
+        "pickerGroup.foreground": "#80CBC4",
+        "tab.activeBorder": "#80CBC4",
+        "notificationLink.foreground": "#80CBC4",
+        "editorWidget.resizeBorder": "#80CBC4",
+        "editorWidget.border": "#80CBC4",
+        "settings.modifiedItemIndicator": "#80CBC4",
+        "settings.headerForeground": "#80CBC4",
+        "panelTitle.activeBorder": "#80CBC4",
+        "breadcrumb.activeSelectionForeground": "#80CBC4",
+        "menu.selectionForeground": "#80CBC4",
+        "menubar.selectionForeground": "#80CBC4",
+        "editor.findMatchBorder": "#80CBC4",
+        "selection.background": "#80CBC440",
+        "statusBarItem.remoteBackground": "#80CBC4"
+    },
+    "materialTheme.accent": "Teal",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/dist/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.sideBar.location": "left",
+    "editor.renameOnType": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

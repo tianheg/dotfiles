@@ -1,0 +1,39 @@
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="/home/tianheg/.oh-my-zsh"
+ZSH_THEME="nodeys"
+ZSH_DISABLE_COMPFIX="true"
+DISABLE_AUTO_UPDATE="true"
+DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+HIST_STAMPS="yyyy-mm-dd"
+plugins=(
+docker
+zsh-syntax-highlighting 
+zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+export GPG_TTY=$(tty)
+
+# for Enable Public Access on your X11 server for Windows.
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+export LIBGL_ALWAYS_INDIRECT=1
+
+# yarn
+export PATH="$PATH:$(yarn global bin)"
+
+# disable security check
+export ZSH_DISABLE_COMPFIX="true"
+# tj/n 的路径
+export N_PREFIX="$HOME/.n"
+# 当切换 Node.js 版本时保留 npm
+export N_PRESERVE_NPM=1
+# 将 tj/n 添加到 PATH
+export PATH = "$N_PREFIX/bin:$PATH"
+
+alias rezsh="source $HOME/.zshrc"

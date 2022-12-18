@@ -1,0 +1,102 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+delete",
+        "command": "-editor.action.clipboardCutAction",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "-workbench.action.files.openFolder"
+    },
+    {
+        "key": "ctrl+x ctrl+s",
+        "command": "-workbench.action.files.save",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+w",
+        "command": "-workbench.action.files.saveAs",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x b",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+x h",
+        "command": "-editor.action.selectAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+o",
+        "command": "-emacs.C-x_C-o",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x r",
+        "command": "-emacs.C-x_r",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x u",
+        "command": "-emacs.C-x_u",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-emacs.cursorPageDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-java.action.clipboardPasteAction",
+        "when": "javaLSReady && editorLangId == 'java'"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-workbench.action.terminal.paste",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.extension.togglePreviewToSide",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+alt+z",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "actions.find"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-notebook.find",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFind",
+        "when": "terminalFindFocused || terminalFocus"
+    }
+]
