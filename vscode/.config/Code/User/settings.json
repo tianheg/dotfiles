@@ -1,0 +1,39 @@
+{
+    "workbench.sideBar.location": "right",
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorTheme": "freeCodeCamp Dark Theme",
+    "workbench.startupEditor": "none",
+    "extensions.ignoreRecommendations": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 18,
+    "files.autoSave": "afterDelay",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.menuBarVisibility": "toggle",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.linkedEditing": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "redhat.telemetry.enabled": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.tabSize": 2,
+    "versionlens.suggestions.showOnStartup": true,
+    "projectManager.git.baseFolders": [
+        "/mnt/disk/repo",
+        "~/"
+    ]
+}

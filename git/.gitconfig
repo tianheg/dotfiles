@@ -1,0 +1,41 @@
+[core]
+  eol = lf
+  quotepath = false
+  autocrlf = false
+  safecrlf = true
+  excludesfile = ~/.gitignore
+  commitGraph = true
+[user]
+  email = yidajiabei@gmail.com
+  name = tianheg
+  signingkey = 34B5D16A1EE7FAB9
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/bin/gpg
+[advice]
+  addIgnoredFile = false
+[gui]
+  encoding = utf-8
+[i18n "commit"]
+  encoding = utf-8
+[i18n]
+  logoutputencoding = utf-8
+[pull]
+  rebase = true
+[diff]
+  submodule = log
+[init]
+  defaultBranch = main
+[http]
+  proxy = http://127.0.0.1:7890
+[receive]
+  advertisePushOptions = true
+  procReceiveRefs = refs/for
+[gc]
+  writeCommitGraph = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
