@@ -35,5 +35,6 @@
     "projectManager.git.baseFolders": [
         "/mnt/disk/repo",
         "~/"
-    ]
+    ],
+    "cody.serverEndpoint": "https://sourcegraph.com/"
 }

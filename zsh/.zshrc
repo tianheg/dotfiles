@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases command-not-found)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -81,15 +81,9 @@ DEBUGINFOD_URLS="https://debuginfod.archlinux.org/"
 #source /etc/profile.d/emscripten.sh
 # python http server
 alias pys="python -m http.server -b 127.0.0.1"
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 ## Web
 # pnpm
-alias palias="alias | rg 'pnpm'"
-alias pcr="pnpm create"
 export PNPM_HOME="/home/archie/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # yarn

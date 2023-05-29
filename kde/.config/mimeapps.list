@@ -1,0 +1,56 @@
+[Added Associations]
+application/x-md=visual-studio-code.desktop;emacs.desktop;
+application/xml=visual-studio-code.desktop;vim.desktop;emacs.desktop;
+image/avif=org.gnome.gThumb.desktop;
+image/jpeg=org.gnome.gThumb.desktop;
+image/png=org.gnome.gThumb.desktop;
+image/svg+xml=firefoxdeveloperedition.desktop;org.inkscape.Inkscape.desktop;org.gnome.gThumb.desktop;vim.desktop;emacs.desktop;code.desktop;
+image/webp=org.gnome.gThumb.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/csv=emacs.desktop;vim.desktop;
+text/org=emacs.desktop;visual-studio-code.desktop;
+x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
+x-scheme-handler/http=firefox-developer-edition.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;
+x-scheme-handler/mailto=emacs-mail.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-4QJIR1.desktop;org.telegram.desktop.desktop;
+
+[Default Applications]
+application/x-extension-htm=firefoxdeveloperedition.desktop
+application/x-extension-html=firefoxdeveloperedition.desktop
+application/x-extension-shtml=firefoxdeveloperedition.desktop
+application/x-extension-xht=firefoxdeveloperedition.desktop
+application/x-extension-xhtml=firefoxdeveloperedition.desktop
+application/x-md=visual-studio-code.desktop;
+application/xhtml+xml=firefoxdeveloperedition.desktop
+application/xml=visual-studio-code.desktop;
+image/avif=org.gnome.gThumb.desktop;
+image/jpeg=org.gnome.gThumb.desktop;
+image/png=org.gnome.gThumb.desktop;
+image/svg+xml=firefoxdeveloperedition.desktop;
+image/webp=org.gnome.gThumb.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/csv=emacs.desktop;
+text/html=firefoxdeveloperedition.desktop
+text/org=emacs.desktop;
+x-scheme-handler/anytype=anytype2.desktop
+x-scheme-handler/chrome=firefoxdeveloperedition.desktop
+x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
+x-scheme-handler/http=firefoxdeveloperedition.desktop
+x-scheme-handler/https=firefoxdeveloperedition.desktop
+x-scheme-handler/magnet=Electron.desktop
+x-scheme-handler/mailto=emacs-mail.desktop;
+x-scheme-handler/mo=Electron.desktop
+x-scheme-handler/motrix=Electron.desktop
+x-scheme-handler/tg=org.telegram.desktop.desktop
+
+[Removed Associations]
+application/pdf=google-chrome.desktop;
+application/x-md=nutstore-lightapp.desktop;
+application/xml=google-chrome.desktop;firefox-developer-edition.desktop;
+audio/flac=mpv.desktop;
+image/jpeg=google-chrome.desktop;
+image/png=google-chrome.desktop;
+image/webp=google-chrome.desktop;
+text/csv=code.desktop;visual-studio-code-insiders.desktop;
+text/org=vim.desktop;
