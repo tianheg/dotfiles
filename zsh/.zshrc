@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases command-not-found)
+plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -129,8 +129,8 @@ eval "$(starship init zsh)"
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-# Jekyll
-# Install Ruby Gems to default location
+# Ruby
+eval "$(rbenv init - zsh)"
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 # sourcegraph https://sourcegraph.com
