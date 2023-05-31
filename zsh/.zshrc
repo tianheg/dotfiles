@@ -26,7 +26,8 @@ epo_old () {
     emacs -nw content/posts/"$1".md
   fi
 }
-
+alias hg_s="hugo server --buildFuture"
+alias hg_b="hugo --buildFuture"
 ## Tools
 
 # editor
