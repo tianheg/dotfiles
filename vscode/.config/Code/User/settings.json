@@ -36,5 +36,11 @@
         "/mnt/disk/repo",
         "~/"
     ],
-    "cody.serverEndpoint": "https://sourcegraph.com/"
+    "cody.serverEndpoint": "https://sourcegraph.com/",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
