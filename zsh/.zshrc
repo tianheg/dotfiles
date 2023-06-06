@@ -26,7 +26,7 @@ epo_old () {
     emacs -nw content/posts/"$1".md
   fi
 }
-alias hg_s="hugo server --buildFuture"
+alias hg_s="hugo server --buildFuture --tlsAuto"
 alias hg_b="hugo --buildFuture"
 ## Tools
 
@@ -118,8 +118,6 @@ export GPG_TTY=$(tty)
 # https://direnv.net/docs/hook.html
 # exercism
 alias exsu="exercism submit"
-# edit temp.org file
-alias et="emacs -nw /home/archie/'Nutstore Files'/dropbox/gtd/temp.org"
 # Android SDK
 export ANDROID_SDK_ROOT=/opt/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
