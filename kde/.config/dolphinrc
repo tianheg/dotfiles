@@ -7,6 +7,7 @@ PreviewSize=32
 [General]
 ConfirmClosingMultipleTabs=false
 LockPanels=false
+OpenExternallyCalledFolderInNewTab=true
 RememberOpenedTabs=false
 SortingChoice=CaseInsensitiveSorting
 Version=202
@@ -24,7 +25,7 @@ Places Icons Auto-resize=true
 Places Icons Static Size=32
 
 [KPropertiesDialog]
-1920x1080 screen: Height=544
+1920x1080 screen: Height=631
 1920x1080 screen: Width=468
 XWAYLAND0 Height 1920x1080=468
 XWAYLAND0 Width 1920x1080=433

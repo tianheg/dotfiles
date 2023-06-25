@@ -15,7 +15,7 @@ Active=true
 EveningBeginFixed=1700
 LatitudeAuto=30.2994
 LongitudeAuto=120.1612
-Mode=Times
+Mode=Constant
 MorningBeginFixed=0700
 TransitionTime=3
 
