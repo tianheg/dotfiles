@@ -87,8 +87,6 @@ alias pys="python -m http.server -b 127.0.0.1"
 # pnpm
 export PNPM_HOME="/home/archie/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
-# yarn
-alias yalias="alias | rg 'yarn'"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
