@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Breeze
-Font=Monospace,12,-1,5,50,0,0,0,0,0
+Font=Monospace,13,-1,5,50,0,0,0,0,0
 TabColor=128,128,128
 
 [Cursor Options]
