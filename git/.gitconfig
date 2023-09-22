@@ -6,7 +6,7 @@
   excludesfile = ~/.gitignore
   commitGraph = true
 [user]
-  email = yidajiabei@gmail.com
+  email = i@tianheg.co
   name = tianheg
   signingkey = 34B5D16A1EE7FAB9
 [commit]
