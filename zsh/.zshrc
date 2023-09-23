@@ -82,6 +82,7 @@ DEBUGINFOD_URLS="https://debuginfod.archlinux.org/"
 #source /etc/profile.d/emscripten.sh
 # python http server
 alias pys="python -m http.server -b 127.0.0.1"
+alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
 # pnpm
