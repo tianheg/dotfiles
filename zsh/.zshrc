@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases)
+plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -105,7 +105,8 @@ export GOPROXY=https://goproxy.cn
 # gpg
 export GPG_TTY=$(tty)
 # pyenv
-# eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
 # ssh-agent
 # if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 #     ssh-agent -t 24h > "$XDG_RUNTIME_DIR/ssh-agent.env"
