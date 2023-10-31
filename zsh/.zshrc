@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status pnpm zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm)
+plugins=(archlinux git git-auto-status pnpm bun zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
