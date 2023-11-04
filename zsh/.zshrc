@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status pnpm bun zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm)
+plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm bun deno)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -68,11 +68,6 @@ alias pc="proxychains"
 # emacs
 alias e="emacs -nw"
 export DOCPATH=/usr/share/hunspell
-# vs code
-alias c="code ."
-# miniconda
-#source /opt/miniconda/etc/profile.d/conda.sh
-#source /home/archie/.config/broot/launcher/bash/br
 # vagrant
 fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh $fpath)
 compinit
@@ -85,13 +80,12 @@ alias pys="python -m http.server -b 127.0.0.1"
 alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
-# pnpm
-export PNPM_HOME="/home/archie/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+alias nil="nvm install --lts"
+
 # deno
 export PATH="/home/archie/.deno/bin:$PATH"
 # sass
@@ -135,3 +129,6 @@ export PATH="$PATH:$GEM_HOME/bin"
 # sourcegraph https://sourcegraph.com
 export SRC_ENDPOINT=https://sourcegraph.com
 export SRC_ACCESS_TOKEN=sgp_c52c927cf1355b75d87998afb4bdc3068e4538f3
+
+# bun completions
+[ -s "/home/archie/.bun/_bun" ] && source "/home/archie/.bun/_bun"
