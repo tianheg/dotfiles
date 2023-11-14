@@ -12,9 +12,14 @@ UseCustomCursorColor=false
 Command=/usr/bin/zsh
 Name=archie
 Parent=FALLBACK/
+SemanticUpDown=true
+
+[Keyboard]
+KeyBindings=default
 
 [Scrolling]
 HistoryMode=2
 
 [Terminal Features]
+BellMode=3
 BlinkingCursorEnabled=true
