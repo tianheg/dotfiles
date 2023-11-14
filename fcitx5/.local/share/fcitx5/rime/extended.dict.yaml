@@ -1,0 +1,12 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: extended
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - luna_pinyin
+#  - luna_pinyin_simp
+#  - zhwiki
+...
