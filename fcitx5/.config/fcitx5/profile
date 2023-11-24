@@ -16,7 +16,7 @@ Layout=
 # Name
 Name=rime
 # Layout
-Layout=us
+Layout=cn
 
 [GroupOrder]
 0=Default
