@@ -10,6 +10,8 @@ zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
+zmodload zsh/zprof
+
 source $ZSH/oh-my-zsh.sh
 
 ### User configuration
@@ -78,11 +80,18 @@ alias pys="python -m http.server -b 127.0.0.1"
 alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
-# nvm
-source /usr/share/nvm/init-nvm.sh
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-alias nil="nvm install --lts"
+# nvm https://peterlyons.com/problog/2018/01/zsh-lazy-loading/
+nvm() {
+  if [[ -d '/usr/share/nvm' ]]; then
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm "$@"
+    alias nil="nvm install --lts"
+  else
+    echo "nvm is not installed" >&2
+    return 1
+  fi
+}
 
 # deno
 export PATH="/home/archie/.deno/bin:$PATH"
@@ -124,6 +133,7 @@ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 eval "$(rbenv init - zsh)"
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com
 # sourcegraph https://sourcegraph.com
 export SRC_ENDPOINT=https://sourcegraph.com
 export SRC_ACCESS_TOKEN=sgp_c52c927cf1355b75d87998afb4bdc3068e4538f3
