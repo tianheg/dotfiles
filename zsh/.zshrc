@@ -79,15 +79,9 @@ alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
 # nvm https://peterlyons.com/problog/2018/01/zsh-lazy-loading/
-if [[ -d '/usr/share/nvm' ]]; then
-  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  nvm "$@"
-  alias nil="nvm install --lts"
-else
-  echo "nvm is not installed" >&2
-  return 1
-fi
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+alias nil="nvm install --lts"
 
 # deno
 export PATH="/home/archie/.deno/bin:$PATH"
