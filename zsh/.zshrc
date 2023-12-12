@@ -4,13 +4,11 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting z.lua aliases pdm bun)
+plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting z.lua aliases bun)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
-
-zmodload zsh/zprof
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,17 +79,15 @@ alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
 # nvm https://peterlyons.com/problog/2018/01/zsh-lazy-loading/
-nvm() {
-  if [[ -d '/usr/share/nvm' ]]; then
-    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    nvm "$@"
-    alias nil="nvm install --lts"
-  else
-    echo "nvm is not installed" >&2
-    return 1
-  fi
-}
+if [[ -d '/usr/share/nvm' ]]; then
+  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  nvm "$@"
+  alias nil="nvm install --lts"
+else
+  echo "nvm is not installed" >&2
+  return 1
+fi
 
 # deno
 export PATH="/home/archie/.deno/bin:$PATH"
