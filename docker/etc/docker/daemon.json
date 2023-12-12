@@ -4,5 +4,6 @@
         "https://dockerproxy.com",
         "https://docker.nju.edu.cn",
 	"https://docker.mirrors.sjtug.sjtu.edu.cn"
-    ]
+    ],
+    "data-root": "/mnt/disk/docker"
 }
