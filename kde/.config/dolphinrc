@@ -4,6 +4,9 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 [ContentDisplay]
 UsePermissionsFormat=CombinedFormat
 
+[ContextMenu]
+ShowOpenTerminal=false
+
 [DetailsMode]
 PreviewSize=32
 
@@ -30,8 +33,8 @@ Places Icons Static Size=32
 [KPropertiesDialog]
 1920x1080 screen: Height=631
 1920x1080 screen: Width=468
-2 screens: Height=631
-2 screens: Width=489
+2 screens: Height=468
+2 screens: Width=446
 XWAYLAND0 Height 1920x1080=468
 XWAYLAND0 Width 1920x1080=433
 eDP-1 Height 1920x1080=631
@@ -55,3 +58,6 @@ IconSize=-1
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[VersionControl]
+enabledPlugins=Git,Dropbox

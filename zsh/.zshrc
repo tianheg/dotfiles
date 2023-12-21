@@ -16,20 +16,20 @@ source $ZSH/oh-my-zsh.sh
 
 ## blog
 epo () {
-  emacs -nw content/posts/"$1".org
+  emacsclient -nw content/posts/"$1".org
 }
 epo_old () {
   FILE="content/posts/$1.org"
   if [[ -f "$FILE" ]]; then
-    emacs -nw content/posts/"$1".org
+    emacsclient -nw content/posts/"$1".org
   else
-    emacs -nw content/posts/"$1".md
+    emacsclient -nw content/posts/"$1".md
   fi
 }
 ## Tools
 
 # editor
-export EDITOR='emacs -nw'
+export EDITOR='emacsclient -nw'
 # z.lua
 eval "$(lua ~/.z.lua/z.lua --init enhanced once zsh)"
 # cd
@@ -64,7 +64,7 @@ alias pc="proxychains"
 #export GUILE_AUTO_COMPILE=0
 #alias guile="guile --fresh-auto-compile"
 # emacs
-alias e="emacs -nw"
+alias e="emacsclient -nw"
 export DOCPATH=/usr/share/hunspell
 # vagrant
 fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh $fpath)
