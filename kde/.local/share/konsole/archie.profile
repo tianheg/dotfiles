@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Breeze
-Font=Monospace,13,-1,5,50,0,0,0,0,0
+Font=Monospace,16,-1,5,50,0,0,0,0,0
 TabColor=128,128,128
 
 [Cursor Options]
@@ -14,11 +14,15 @@ Name=archie
 Parent=FALLBACK/
 SemanticUpDown=true
 
+[Interaction Options]
+TextEditorCmd=6
+
 [Keyboard]
 KeyBindings=default
 
 [Scrolling]
-HistoryMode=2
+HistoryMode=1
+HistorySize=9999
 
 [Terminal Features]
 BellMode=3
