@@ -48,6 +48,8 @@ alias ll='ls -lFh --color=auto'
 alias es="exa -F --icons"
 alias ea="exa -Fa"
 alias el="exa -aFghl --git"
+# not rm, yes trash!
+alias rm='echo "This is not the command you are looking for."; false'
 # bat
 alias cat=bat
 alias man=batman
