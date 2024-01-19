@@ -1,5 +1,5 @@
 export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profile/bin:$HOME/.cargo/bin:$PATH
-export ZSH="/home/archie/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
