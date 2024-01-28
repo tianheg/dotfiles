@@ -1,9 +1,0 @@
-# Rime default custom settings
-# encoding: utf-8
-
-patch:
-  schema_list:
-    - schema: luna_pinyin
-
-  menu:
-    page_size: 8
