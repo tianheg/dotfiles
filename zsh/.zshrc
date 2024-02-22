@@ -1,4 +1,4 @@
-export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profile/bin:$HOME/.cargo/bin:$PATH
+export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profile/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.bun/bin:$HOME/.deno/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
@@ -41,13 +41,12 @@ mc () {
   mkdir "$1"
   cd "$1"
 }
-# ls & exa
+# ls & eza
 alias ls='ls --color=auto'
 alias la='ls -AF --color=auto'
 alias ll='ls -lFh --color=auto'
-alias es="exa -F --icons"
-alias ea="exa -Fa"
-alias el="exa -aFghl --git"
+alias ea="eza -a"
+alias el="eza -aghl --git"
 # not rm, yes trash!
 alias rm='echo "This is not the command you are looking for."; false'
 # bat
@@ -84,9 +83,6 @@ alias py_venv="python -m venv .venv --upgrade-deps"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 alias nil="nvm install --lts"
-
-# deno
-export PATH="/home/archie/.deno/bin:$PATH"
 # sass
 #alias sass-w="sass -w --no-source-map -s compressed"
 sass-w () {
@@ -126,9 +122,3 @@ eval "$(rbenv init - zsh)"
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com
-# sourcegraph https://sourcegraph.com
-export SRC_ENDPOINT=https://sourcegraph.com
-export SRC_ACCESS_TOKEN=sgp_c52c927cf1355b75d87998afb4bdc3068e4538f3
-
-# bun completions
-[ -s "/home/archie/.bun/_bun" ] && source "/home/archie/.bun/_bun"
