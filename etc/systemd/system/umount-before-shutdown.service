@@ -1,0 +1,11 @@
+[Unit]
+Description=Unmount /mnt/disk before shutdown
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/umount /mnt/disk
+
+[Install]
+WantedBy=halt.target reboot.target shutdown.target

@@ -4,7 +4,7 @@ ZSH_THEME="robbyrussell"
 
 # ENABLE_CORRECTION="true" # 启用命令自动纠正
 
-plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting z.lua aliases bun)
+plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun)
 
 zstyle ':omz:update' mode auto
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -80,8 +80,7 @@ alias py_venv="python -m venv .venv --upgrade-deps"
 
 ## Web
 # nvm https://peterlyons.com/problog/2018/01/zsh-lazy-loading/
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+source /usr/share/nvm/init-nvm.sh
 alias nil="nvm install --lts"
 # sass
 #alias sass-w="sass -w --no-source-map -s compressed"
@@ -93,20 +92,6 @@ sass-w () {
 export GOPROXY=https://goproxy.cn
 # gpg
 export GPG_TTY=$(tty)
-# pyenv
-eval "$(pyenv init -)"
-
-# ssh-agent
-# if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-#     ssh-agent -t 24h > "$XDG_RUNTIME_DIR/ssh-agent.env"
-# fi
-# if [[ ! "$SSH_AUTH_SOCK" ]]; then
-#     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
-# fi
-# ssh-add ~/.ssh/ssh_rsa_ts 2>/dev/null
-# https://direnv.net/docs/hook.html
-# exercism
-alias exsu="exercism submit"
 # Android SDK
 export ANDROID_SDK_ROOT=/opt/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
@@ -117,8 +102,5 @@ eval "$(starship init zsh)"
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-# Ruby
-eval "$(rbenv init - zsh)"
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$GEM_HOME/bin"
-export RUBY_BUILD_MIRROR_URL=https://cache.ruby-china.com
+# backup
+alias backup="~/dotfiles/scripts/backupToDot.sh"
