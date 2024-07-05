@@ -2,7 +2,7 @@ export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profil
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
-plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun)
+plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun-alias)
 
 zstyle ':omz:update' mode auto
 
