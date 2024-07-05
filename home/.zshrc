@@ -2,13 +2,9 @@ export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profil
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
-# ENABLE_CORRECTION="true" # 启用命令自动纠正
-
 plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun)
 
 zstyle ':omz:update' mode auto
-zstyle ':completion:*:*:docker:*' option-stacking yes
-zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,14 +13,6 @@ source $ZSH/oh-my-zsh.sh
 ## blog
 epo () {
   emacs -nw content/posts/"$1".org
-}
-epo_old () {
-  FILE="content/posts/$1.org"
-  if [[ -f "$FILE" ]]; then
-    emacs -nw content/posts/"$1".org
-  else
-    emacs -nw content/posts/"$1".md
-  fi
 }
 ## Tools
 
@@ -52,55 +40,27 @@ alias rm='echo "This is not the command you are looking for."; false'
 # bat
 alias cat=bat
 alias man=batman
-# ripgrep only file name
-# refer https://github.com/BurntSushi/ripgrep/issues/193#issuecomment-513201558
-rgf () {
-  rg --files $1 | rg $2
-}
 # zsh
 alias rezsh="source ~/.zshrc"
-# proxy
-alias pc="proxychains"
-# guile
-#export GUILE_AUTO_COMPILE=0
-#alias guile="guile --fresh-auto-compile"
 # emacs
 alias e="emacs -nw"
 export DOCPATH=/usr/share/hunspell
-# vagrant
-fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh $fpath)
-compinit
-# gdb
-DEBUGINFOD_URLS="https://debuginfod.archlinux.org/"
-# Emscripten(C to wasm)
-#source /etc/profile.d/emscripten.sh
 # python http server
 alias pys="python -m http.server -b 127.0.0.1"
-alias py_venv="python -m venv .venv --upgrade-deps"
+alias py_venv="python -m venv .venv --upgrade-deps && . ./.venv/bin/activate"
 
 ## Web
 # nvm https://peterlyons.com/problog/2018/01/zsh-lazy-loading/
 source /usr/share/nvm/init-nvm.sh
 alias nil="nvm install --lts"
-# sass
-#alias sass-w="sass -w --no-source-map -s compressed"
-sass-w () {
-  sass --watch --update --no-source-map --style=compressed $1/style.scss:$1/style.css
-}
 ## Others
 # Go proxy
 export GOPROXY=https://goproxy.cn
 # gpg
 export GPG_TTY=$(tty)
-# Android SDK
-export ANDROID_SDK_ROOT=/opt/android-sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 # https://github.com/starship/starship
 eval "$(starship init zsh)"
 # proxy
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-# backup
-alias backup="~/dotfiles/scripts/backupToDot.sh"
