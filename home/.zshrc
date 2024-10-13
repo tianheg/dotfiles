@@ -2,7 +2,7 @@ export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.nix-profil
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
-plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun-alias)
+plugins=(archlinux git git-auto-status zsh-autosuggestions zsh-syntax-highlighting aliases bun-alias pnpm)
 
 zstyle ':omz:update' mode auto
 
@@ -61,6 +61,10 @@ export GPG_TTY=$(tty)
 # https://github.com/starship/starship
 eval "$(starship init zsh)"
 # proxy
+export socks5_proxy=http://127.0.0.1:7891
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+
+# ruby
+eval "$(rbenv init - zsh)"
