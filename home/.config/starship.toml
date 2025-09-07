@@ -19,17 +19,26 @@ symbol = "aws "
 [azure]
 symbol = "az "
 
+[buf]
+symbol = "buf "
+
 [bun]
 symbol = "bun "
 
 [c]
 symbol = "C "
 
+[cpp]
+symbol = "C++ "
+
 [cobol]
 symbol = "cobol "
 
 [conda]
 symbol = "conda "
+
+[container]
+symbol = "container "
 
 [crystal]
 symbol = "cr "
@@ -73,6 +82,9 @@ symbol = "gcp "
 [git_branch]
 symbol = "git "
 
+[gleam]
+symbol = "gleam "
+
 [golang]
 symbol = "go "
 
@@ -81,6 +93,12 @@ symbol = "gradle "
 
 [guix_shell]
 symbol = "guix "
+
+[haskell]
+symbol = "haskell "
+
+[helm]
+symbol = "helm "
 
 [hg_branch]
 symbol = "hg "
@@ -106,6 +124,9 @@ symbol = "memory "
 [meson]
 symbol = "meson "
 
+[nats]
+symbol = "nats "
+
 [nim]
 symbol = "nim "
 
@@ -119,12 +140,16 @@ symbol = "ml "
 symbol = "opa "
 
 [os.symbols]
+AIX = "aix "
 Alpaquita = "alq "
+AlmaLinux = "alma "
 Alpine = "alp "
 Amazon = "amz "
 Android = "andr "
 Arch = "rch "
 Artix = "atx "
+Bluefin = "blfn "
+CachyOS = "cach "
 CentOS = "cent "
 Debian = "deb "
 DragonFly = "dfbsd "
@@ -136,6 +161,7 @@ Garuda = "garu "
 Gentoo = "gent "
 HardenedBSD = "hbsd "
 Illumos = "lum "
+Kali = "kali "
 Linux = "lnx "
 Mabox = "mbox "
 Macos = "mac "
@@ -145,6 +171,7 @@ MidnightBSD = "mid "
 Mint = "mint "
 NetBSD = "nbsd "
 NixOS = "nix "
+Nobara = "nbra "
 OpenBSD = "obsd "
 OpenCloudOS = "ocos "
 openEuler = "oeul "
@@ -154,11 +181,15 @@ Pop = "pop "
 Raspbian = "rasp "
 Redhat = "rhl "
 RedHatEnterprise = "rhel "
+RockyLinux = "rky "
 Redox = "redox "
 Solus = "sol "
 SUSE = "suse "
 Ubuntu = "ubnt "
+Ultramarine = "ultm "
 Unknown = "unk "
+Uos = "uos "
+Void = "void "
 Windows = "win "
 
 [package]
@@ -173,6 +204,9 @@ symbol = "php "
 [pijul_channel]
 symbol = "pijul "
 
+[pixi]
+symbol = "pixi "
+
 [pulumi]
 symbol = "pulumi "
 
@@ -182,8 +216,14 @@ symbol = "purs "
 [python]
 symbol = "py "
 
+[quarto]
+symbol = "quarto "
+
 [raku]
 symbol = "raku "
+
+[rlang]
+symbol = "r "
 
 [ruby]
 symbol = "rb "
